@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +53,7 @@
     <Compile Include="ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Common\CommonClass.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +193,7 @@
     <Content Include="bin\Release\TMS.exe" />
     <Content Include="bin\Release\TMS.pdb" />
     <Content Include="bin\Release\TMS.vshost.exe" />
+    <Content Include="dbScript\Script.sql" />
     <Content Include="obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="obj\Release\TMS.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Release\TMS.exe" />
@@ -204,6 +207,7 @@
     <Content Include="TMSImage\Receipt-Form.jpg" />
     <Content Include="TMSImage\user.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

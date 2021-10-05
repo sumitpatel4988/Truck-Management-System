@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
+using TMS.Common;
 
 namespace TMS
 {
@@ -56,10 +59,57 @@ namespace TMS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TruckManagement tm = new TruckManagement();
-            tm.ShowDialog();
-            this.Close();
+            if (txtUserName.Text != "" && txtPassword.Text != "")
+            {
+                SqlConnection con = new SqlConnection("Data Source=DESKTOP-NVR25D0\\MSSQLSERVER2019;Initial Catalog=TMS_V1;Integrated Security=True");
+                string Password = "",role = "";
+                bool IsExist = false;
+                con.Open();
+                SqlCommand cmd = new SqlCommand("select userName,password,firstName,role from [User] where userName='" + txtUserName.Text + "'", con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.Read())
+                {
+                    Password = sdr.GetString(1);  //get the user password from db if the user name is exist in that.  
+                    role = sdr.GetString(3);
+                    IsExist = true;
+                }
+                con.Close();
+                if (IsExist)  //if record exis in db , it will return true, otherwise it will return false  
+                {
+                    if (CommonClass.Decrypt(Password).Equals(txtPassword.Text))
+                    {
+                        try
+                        {
+                            LoginInfo.UserName = txtUserName.Text;
+                            LoginInfo.Password = txtPassword.Text;
+                            LoginInfo.Role = role;
+                            MessageBox.Show("Login Success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            TruckManagement tm = new TruckManagement();
+                            tm.ShowDialog();
+                            this.Close();
+                        }
+                        catch (Exception ex)
+                        {
+
+                            throw;
+                        }                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Password is wrong!...", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                }
+                else  //showing the error message if user credential is wrong  
+                {
+                    MessageBox.Show("Please enter the valid credentials", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter Username and password", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

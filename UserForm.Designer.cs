@@ -36,28 +36,20 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.ddlUserType = new System.Windows.Forms.ComboBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CreatedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CreatedBy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -122,21 +114,21 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "First Name";
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(114, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 22);
-            this.textBox1.TabIndex = 31;
+            this.txtFirstName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(114, 56);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(271, 22);
+            this.txtFirstName.TabIndex = 31;
             // 
-            // textBox2
+            // txtUserName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(116, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 22);
-            this.textBox2.TabIndex = 33;
+            this.txtUserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(116, 95);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(269, 22);
+            this.txtUserName.TabIndex = 33;
             // 
             // label1
             // 
@@ -150,14 +142,14 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "User Name";
             // 
-            // textBox3
+            // txtPassword
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(489, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(279, 22);
-            this.textBox3.TabIndex = 35;
-            this.textBox3.UseSystemPasswordChar = true;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(489, 98);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(279, 22);
+            this.txtPassword.TabIndex = 35;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -183,34 +175,34 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Confirmed Password";
             // 
-            // textBox4
+            // txtConfirmPassword
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(954, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(279, 22);
-            this.textBox4.TabIndex = 37;
-            this.textBox4.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(954, 101);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(279, 22);
+            this.txtConfirmPassword.TabIndex = 37;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
-            // comboBox1
+            // ddlUserType
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ddlUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlUserType.FormattingEnabled = true;
+            this.ddlUserType.Items.AddRange(new object[] {
             "Admin",
             "User"});
-            this.comboBox1.Location = new System.Drawing.Point(954, 61);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(279, 21);
-            this.comboBox1.TabIndex = 38;
+            this.ddlUserType.Location = new System.Drawing.Point(954, 61);
+            this.ddlUserType.Name = "ddlUserType";
+            this.ddlUserType.Size = new System.Drawing.Size(279, 21);
+            this.ddlUserType.TabIndex = 38;
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(487, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(281, 22);
-            this.textBox5.TabIndex = 40;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(487, 60);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(281, 22);
+            this.txtEmail.TabIndex = 40;
             // 
             // label6
             // 
@@ -261,6 +253,7 @@
             this.btnSave.TabIndex = 42;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dgvUser
             // 
@@ -279,68 +272,12 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SNo,
-            this.FirstName,
-            this.Email,
-            this.UserType,
-            this.UserName,
-            this.CreatedDate,
-            this.CreatedBy,
-            this.Status});
             this.dgvUser.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvUser.Location = new System.Drawing.Point(4, 190);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.Size = new System.Drawing.Size(1340, 253);
             this.dgvUser.TabIndex = 44;
-            // 
-            // SNo
-            // 
-            this.SNo.HeaderText = "S.No";
-            this.SNo.Name = "SNo";
-            this.SNo.Width = 50;
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "FirstName";
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Width = 200;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.Width = 290;
-            // 
-            // UserType
-            // 
-            this.UserType.HeaderText = "UserType";
-            this.UserType.Name = "UserType";
-            this.UserType.Width = 130;
-            // 
-            // UserName
-            // 
-            this.UserName.HeaderText = "UserName";
-            this.UserName.Name = "UserName";
-            this.UserName.Width = 200;
-            // 
-            // CreatedDate
-            // 
-            this.CreatedDate.HeaderText = "CreatedDate";
-            this.CreatedDate.Name = "CreatedDate";
-            this.CreatedDate.Width = 150;
-            // 
-            // CreatedBy
-            // 
-            this.CreatedBy.HeaderText = "Created By";
-            this.CreatedBy.Name = "CreatedBy";
-            this.CreatedBy.Width = 150;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            this.Status.Width = 130;
+            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
             // 
             // label8
             // 
@@ -378,16 +315,16 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.ddlUserType);
+            this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel1);
@@ -411,29 +348,21 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.ComboBox ddlUserType;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridView dgvUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CreatedBy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.DataGridView dgvUser;
     }
 }
